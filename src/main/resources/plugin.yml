@@ -1,0 +1,4 @@
+name: TeachJava
+main: com.censoredsoftware.teachjava.TeachJavaPlugin
+version: ${project.version}
+authors: [_Alex, HmmmQuestionMark]

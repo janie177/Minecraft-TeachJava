@@ -1,0 +1,9 @@
+## Restrictions ##
+restrictions:
+    friendly_fire: false
+    disabled_worlds:
+        - world_the_end
+
+## Data ##
+saving:
+    freq: 300
