@@ -18,7 +18,7 @@ public class ZoneListener implements Listener
 		TJPlayer tJPlayer = TJPlayer.Util.getPlayer(player);
 
 		// Leaving a disabled world
-		if(Zones.isNoRealityWorld(event.getFrom()) && !Zones.isNoRealityWorld(player.getWorld()))
+		if(Zones.isNoTeachJavaWorld(event.getFrom()) && !Zones.isNoTeachJavaWorld(player.getWorld()))
 		{
 			player.sendMessage(ChatColor.YELLOW + "TeachJava is enabled in this world.");
 
@@ -38,7 +38,7 @@ public class ZoneListener implements Listener
 		}
 
 		// Entering a disabled world
-		else if(!Zones.isNoRealityWorld(event.getFrom()) && Zones.isNoRealityWorld(player.getWorld()))
+		else if(!Zones.isNoTeachJavaWorld(event.getFrom()) && Zones.isNoTeachJavaWorld(player.getWorld()))
 		{
 			player.sendMessage(ChatColor.GRAY + "TeachJava is disabled in this world.");
 

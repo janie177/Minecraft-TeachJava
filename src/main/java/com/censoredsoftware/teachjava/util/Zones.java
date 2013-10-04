@@ -6,12 +6,12 @@ import org.bukkit.World;
 
 public class Zones
 {
-	public static boolean inNoRealityZone(Location location)
+	public static boolean inNoTeachJavaZone(Location location)
 	{
-		return isNoRealityWorld(location.getWorld());
+		return isNoTeachJavaWorld(location.getWorld());
 	}
 
-	public static boolean isNoRealityWorld(World world)
+	public static boolean isNoTeachJavaWorld(World world)
 	{
 		return TeachJava.DISABLED_WORLDS.contains(world.getName());
 	}

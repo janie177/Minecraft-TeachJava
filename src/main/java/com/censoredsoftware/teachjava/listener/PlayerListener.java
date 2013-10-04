@@ -14,7 +14,7 @@ public class PlayerListener implements Listener
 	@EventHandler
 	public void onPlayerJoin(PlayerJoinEvent event)
 	{
-		if(Zones.inNoRealityZone(event.getPlayer().getLocation())) return;
+		if(Zones.inNoTeachJavaZone(event.getPlayer().getLocation())) return;
 
 		// Define variables
 		Player player = event.getPlayer();
@@ -42,7 +42,7 @@ public class PlayerListener implements Listener
 	@EventHandler(priority = EventPriority.HIGHEST)
 	public void onPlayerQuit(PlayerQuitEvent event)
 	{
-		if(Zones.inNoRealityZone(event.getPlayer().getLocation())) return;
+		if(Zones.inNoTeachJavaZone(event.getPlayer().getLocation())) return;
 
 		// Set their last logout-time
 		Long now = System.currentTimeMillis();
